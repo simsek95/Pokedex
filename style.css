@@ -1,0 +1,306 @@
+.hidden {
+  display: none !important;
+}
+
+.d-flex{
+  display: flex !important;
+}
+
+.j-center{
+  justify-content: center;
+}
+
+.a-center{
+  align-items: center;
+}
+
+.d-flex-col{
+  display: flex;
+  flex-direction: column;
+}
+
+.preview-card-container{
+padding: 20px;
+}
+
+.pokemon-card-preview{
+  background-color: rgba(0, 0, 0, 0.244);
+  width:260px;
+  height: 150px;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.poke-info-preview{
+ display: flex;
+ justify-content: space-evenly;
+}
+
+.poke-info-preview img{
+  height: 110px;
+}
+
+.types-container{
+  padding-left: 20px;
+}
+
+/*###################### REGION COLORS ####################*/
+
+.grass{
+  background-color: #46d1b39f !important;
+}
+
+.grass-opacity-1{
+  background-color: #46d1b3 !important;
+}
+
+.fire{
+  background-color: #d4462689 !important;
+}
+
+.fire-opacity-1{
+  background-color: #d44626 !important;
+}
+
+.water{
+  background-color: #399cffa3;
+}
+
+.water-opacity-1{
+  background-color: #399cff;
+}
+
+.bug{
+  background-color: #91bc2ca2;
+}
+
+.bug-opacity-1{
+  background-color: #91bc2c;
+}
+
+.poison{
+  background-color: rgba(128, 0, 128, 0.616);
+}
+
+.poison-opacity-1{
+  background-color: rgb(128, 0, 128);
+}
+
+.fighting{
+  background-color: #a55239bd;
+}
+
+.fighting-opacity-1{
+  background-color: #a55239;
+}
+
+.rock{
+  background-color: rgba(189, 164, 90, 0.721);
+}
+
+.rock-opacity-1{
+  background-color: rgb(189, 164, 90);
+}
+
+.psychic{
+  background-color: #d86489b2;
+}
+
+.psychic-opacity-1{
+  background-color: #d86489;
+}
+
+.ghost{
+  background-color: #6363b5af;
+}
+
+.ghost-opacity-1{
+  background-color: #6363b5;
+}
+
+.normal{
+  background-color: #a0a29f9a;
+}
+
+.normal-opacity-1{
+  background-color: #a0a29f;
+}
+
+.ground{
+  background-color: #d6b55aaf;
+}
+
+.ground-opacity-1{
+  background-color: #d6b55a;
+}
+
+.electric{
+  background-color: #f2d94ecc; 
+}
+
+.electric-opacity-1{
+  background-color: #f2d94e; 
+}
+
+.flying{
+  background-color: #9cadf7a0;
+}
+
+.flying-opacity-1{
+  background-color: #9CADF7;
+}
+
+.fairy{
+  background-color: #dea0dea1;
+}
+
+.fairy-opacity-1{
+  background-color: #DEA0DE;
+}
+/*################## END COLORS ################ */
+.type-tag{
+  border-radius: 100px;
+  text-align: center;
+  width: 80px;
+  margin-top: 20px;
+  border: 2px solid rgba(10, 10, 10, 0.149);
+} 
+
+.preview-card-container{
+justify-content: center;
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+}
+
+.big-card-overlay{
+background-color: rgba(70, 55, 55, 0.514);
+position: fixed;
+top: 0;
+bottom: 0;
+right: 0;
+left: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.big-poke-card{
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  transition: transform 225ms ease-in-out;
+}
+
+.big-poke-card h1{
+  color: white;
+  padding: 8px;
+  margin: 0;
+}
+
+.poke-card-head{
+  height: 50%;
+  border-radius: 20px 20px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.arrow-container{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 99;
+
+}
+
+.arrow{
+  height: 40px;
+  background-color: #399cff;
+  width: 30px;
+}
+
+.types-container-big{
+  gap: 10px;
+}
+
+.types-container-big .type-tag{
+  margin: 0;
+  color: white;
+}
+
+.poke-card-head img{
+  margin-top: 10px;
+  height: 100%;
+}
+
+.poke-card-body{
+  position: relative;
+  top: -20px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.stats-container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.empty-fill{
+  position: relative;
+  background-color: red;
+  width: 40vw;
+  height: 1vh;
+  border-radius: 3px;
+}
+
+.fill{
+  position: absolute;
+  display: flex;
+  border-radius: 3px;
+  background-color: forestgreen;
+  transition: transform 225ms ease-in-out;
+  transform-origin: 0% 50%;
+  transform: scaleX(0%);
+  height: 100%;
+  width: 100%;
+}
+
+/* .stat{
+  display: flex;
+  align-items: center;
+} */
+
+.table-name{
+  width: 100px;
+  height: 40px;
+  font-weight: bold;
+}
+
+@media (max-width:650px) {
+  .big-poke-card{
+    width: 100%;
+    height: 100%;
+  }
+
+  .poke-card-body{
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0;
+    top:0;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}
